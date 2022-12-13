@@ -1,0 +1,8 @@
+---
+http_host: "51.38.91.9"
+http_port: "80"
+disable_default: true
+
+#mysql
+mysql_user: "Tom"
+mysql_password: "1234dfgg"
