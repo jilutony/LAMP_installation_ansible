@@ -1,0 +1,17 @@
+<VirtualHost *:{{ http_port }}>
+   ServerAdmin webmaster@localhost
+   ServerName {{ http_host }}
+   ServerAlias www.{{ http_host }}
+   DocumentRoot /var/www/html
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+root@dell-Latitude-3510:/etc/ansible/files# cat index.html.j2
+<html>
+   <head>
+       <title>Welcome to {{ http_host }} !</title>
+   </head>
+   <body>
+       <h1>Success! The {{ http_host }} virtual host is working!</h1>
+   </body>
+</html>
